@@ -87,6 +87,9 @@ body {
 .Weather .farenheit {
   font-size: 20px;
   vertical-align: super;
+  border:none;
+  background-color: transparent;
+  
 }
 .Weather .celsius {
   color: black;

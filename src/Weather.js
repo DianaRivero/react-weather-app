@@ -14,12 +14,12 @@ export default function Weather() {
         <h1>
           <span className="temp-value">--</span>
           <span>
-            <a href="#" className="celsius">
+            <button className="celsius"> 
               °C|
-            </a>
-            <a href="#" className="farenheit">
+            </button>
+            <button className="farenheit">
               °F
-            </a>
+            </button>
           </span>
         </h1>
         <City />
