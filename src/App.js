@@ -3,6 +3,7 @@ import "./App.css";
 import Search from "./Search";
 import DateTime from "./DateTime";
 import Weather from "./Weather";
+import Footer from "./Footer";
 
 export default function App() {
   return (
@@ -15,6 +16,9 @@ export default function App() {
         <main>
           <Weather />
         </main>
+        <footer>
+          <Footer/>
+        </footer>
       </div>
     </div>
   );
