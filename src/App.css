@@ -26,7 +26,7 @@ body {
   height: 725px;
   padding: 30px;
   border-radius: 25px;
-   background-image: url("./day-background2.png"); 
+  /* background-image: url("img/day-background2.png");  */
   opacity: 0.9;
   box-shadow: 1px 1px 5px 1px #333339;
 }
