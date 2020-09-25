@@ -12,7 +12,7 @@ export default function Weather() {
           />
         </div>
         <h1>
-          <span className="temp-value">--</span>
+          <span className="temp-value">20</span>
           <span>
             <button className="celsius"> 
               °C|

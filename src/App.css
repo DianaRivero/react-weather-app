@@ -112,6 +112,7 @@ body {
 }
 .City .location {
   margin: 0 auto;
+  line-height : 20px;
   color: #22272b;
 }
 .Weather .weather-description,
