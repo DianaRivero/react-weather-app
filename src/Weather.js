@@ -26,10 +26,10 @@ export default function Weather() {
       </div>
       <div className="weather-description">
         <div className="row">
-          <div className="col max-min">-</div>
-          <div className="col feels-like">-</div>
-          <div className="col humidity">-</div>
-          <div className="col wind">-</div>
+          <div className="col max-min deg"><strong>20°/27°</strong></div>
+          <div className="col feels-like deg"><strong>20°/27°</strong></div>
+          <div className="col humidity deg"><strong>20°/27°</strong></div>
+          <div className="col wind deg"><strong>20°/27°</strong></div>
         </div>
         <div className="row">
           <div className="col">Max-Min</div>

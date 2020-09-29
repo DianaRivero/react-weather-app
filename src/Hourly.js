@@ -14,7 +14,7 @@ export default function Hourly(){
                     </div> 
                 </div>   
                 <div className="row">
-                    <div className="col deg-hour">16°</div>
+                    <div className="col deg-hour"> <strong>16°/20°</strong></div>
                 </div>  
             </div>  
         {/* </div> */}

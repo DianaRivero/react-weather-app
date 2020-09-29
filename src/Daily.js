@@ -13,7 +13,7 @@ export default function Daily(){
                     </div> 
                 </div>   
                 <div className="row">
-                    <div className="col deg-days">16°</div>
+                    <div className="col deg-days"><strong>16°/20°</strong></div>
                 </div>  
             </div>  
     </div>

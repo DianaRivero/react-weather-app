@@ -10,14 +10,14 @@ import Daily from "./Daily";
              <Hourly/>
              <Hourly/>
              <Hourly/>
-             <Hourly/>
+             {/* <Hourly/> */}
             </div>
             <div className ="temp-week-days row">
              <Daily/>
              <Daily/>
              <Daily/>
              <Daily/>
-             <Daily/>
+             {/* <Daily/> */}
             </div>
          </div>
      )

@@ -20,15 +20,17 @@ body {
   );
 }
 .Container {
+  
   display: flex;
   flex-direction: column;
-  width: 400px;
-  height: 725px;
+  max-width: 400px;
+  max-height:725px;
   padding: 30px;
   border-radius: 25px;
-  background-image: url("assets/day-background2.png"); 
+  background-image: url("assets/day-background2.png");
   opacity: 0.9;
   box-shadow: 1px 1px 5px 1px #333339;
+
 }
 .App header {
   display: block;
@@ -89,7 +91,7 @@ body {
   vertical-align: super;
   border:none;
   background-color: transparent;
-  
+
 }
 .Weather .celsius {
   color: black;
@@ -120,23 +122,31 @@ body {
 .Forecast .temp-week-days {
   text-align: center;
   font-size: 14px;
-  font-weight: bold;
   color: #535556;
   text-shadow: 1px 1px 2px #fef9d7;
+  margin-bottom: 20px;
 }
 .Weather .weather-description {
   background-color: rgba(227, 231, 234, 0.7);
   border-radius: 10px;
   box-shadow: 1px 1px 2px #7f8389;
   padding: 10px 5px;
-  margin-bottom: 25px;
+ }
+.Weather .weather-description .col{
+  line-height: 18px;
+}
+.Weather .weather-description .deg{
+  color: black;
+  font-size: 13px;
 }
 .Forecast .temp-hours {
   background-color: rgba(227, 231, 234, 0.7);
   border-radius: 10px;
   box-shadow: 1px 1px 2px #7f8389;
   padding: 5px 10px;
-  margin-bottom: 25px;
+}
+.Forecast .temp-hours .col{
+  line-height: 18px;
 }
 .Weather .unknown-icon {
   width: 50px;
@@ -153,17 +163,20 @@ body {
   opacity: 1;
   filter: drop-shadow(1px 1px 2px #000000);
 }
-.deg-hour,
-.deg-days {
-  font-size: 12px;
+.Hourly .deg-hour,
+.Daily .deg-days {
+  font-size: 13px;
+  color: black;
 }
-.temp-week-days {
+.Forecast .temp-week-days {
   background-color: rgba(227, 231, 234, 0.7);
   border-radius: 10px;
   box-shadow: 1px 1px 2px #7f8389;
   padding: 5px 10px;
   text-align: center;
-  margin-bottom: 25px;
+}
+.Forecast .temp-week-days .col{
+  line-height: 18px;
 }
 
 Footer {
@@ -173,8 +186,72 @@ Footer {
   font-size: lighter;
   text-shadow: 1px 2px 4px #fef9d7;
   border-radius: 10px;
-  margin-top: 50px;
+  /* margin-top: 50px; */
+  position: relative;
+  top: 35px;
 }
 Footer a {
+  color: #3337FF;
+  font-weight: bold;
   text-decoration: none;
+
 }
+@media (max-width:450px ) and (min-width:360px){
+  .Container{
+    max-height: 600px; 
+  }
+  .Search .search-holder {
+    width: 210px;
+    height: 20px;
+  }
+  .Weather .weather-icon {
+    width: 65px;
+    position: relative;
+    top: -20px;
+  }
+  .Weather h1 {
+    font-size: 100px;
+    top: -55px;
+  }
+  .Weather .celsius,
+.Weather .farenheit {
+  font-size: 17px;
+}
+  .City .location {
+    font-size: 28px;
+    position: relative;
+    top: -25px;
+  }
+  .Weather .weather-description, .Forecast .temp-hours,.Forecast .temp-week-days  {
+    font-size: 12px;
+    padding: 3px 5px;
+    position: relative;
+    top: -25px;
+    margin-bottom: 20px;
+  }
+  .Weather .weather-description .deg{
+    font-size: 11px;
+  }
+  .Forecast .temp-hours .col{
+    line-height: 12px;
+  }
+  .icons-hourly-forecast,
+  .icons-daily-forecast {
+    width: 25px;
+  }
+  .Forecast .temp-week-days .col{
+    line-height: 12px;
+  }
+  .Hourly .deg-hour,
+  .Daily .deg-days {
+  font-size: 11px;
+}
+Footer {
+  font-size: 11px;
+  margin: 0 auto;
+  position: relative;
+  top: -4px;
+}
+  }
+    
+ 
