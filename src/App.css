@@ -112,7 +112,7 @@ body {
   text-decoration: none;
   transition: all 200ms ease-in-out;
 }
-.City .location {
+.Weather .location {
   margin: 0 auto;
   line-height : 20px;
   color: #22272b;
@@ -217,7 +217,7 @@ Footer a {
 .Weather .farenheit {
   font-size: 17px;
 }
-  .City .location {
+  .Weather .location {
     font-size: 28px;
     position: relative;
     top: -25px;
