@@ -36,7 +36,7 @@ body {
   display: block;
   margin: 0 auto;
 }
-.DateTime p {
+.Weather .DateTime p {
   font-size: 13px;
   color: #ffffff;
   text-align: center;
@@ -203,6 +203,12 @@ Footer a {
   .Search .search-holder {
     width: 210px;
     height: 20px;
+  }
+  .Weather .DateTime p {
+    font-size: 12px;
+    font-weight:bold;
+    margin-top: -4px;
+    text-shadow: 1.5px 1.5px 4px #010707;
   }
   .Weather .weather-icon {
     width: 65px;

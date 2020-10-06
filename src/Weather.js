@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 // import City from "./City";
 import axios from "axios";
+import DateTime from "./DateTime";
 
 export default function Weather() {
 
@@ -9,6 +10,7 @@ export default function Weather() {
     console.log(response.data);
     setWeatherData({
       ready:true,
+      date: new Date(response.data.dt * 1000),
       temperature: Math.round(response.data.main.temp),
       tempMax: Math.round(response.data.main.temp_max),
       tempMin: Math.round(response.data.main.temp_min),
@@ -22,6 +24,9 @@ export default function Weather() {
   if (weatherData.ready){
     return (
       <div className="Weather">
+        <div className="DateTime">
+          <DateTime date={weatherData.date} />
+        </div>
         <div className="current-weather">
           <div className="row">
             <img
@@ -72,6 +77,9 @@ export default function Weather() {
     
       return(
         <div className="Weather">
+          <div className="DateTime">
+            <p>Welcome!</p>
+          </div>
           <div className="current-weather">
             <div className="row">
               <img
