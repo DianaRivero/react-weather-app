@@ -67,7 +67,7 @@ export default function Weather() {
   } else{  
       let city = "MUNICH";
       const apiKey =`4bf6877c9fd424fd93f8acf13ea89864`;
-      let apiUrl = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`
+      let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`
       axios.get(apiUrl).then(handleResponse);
     
       return(
