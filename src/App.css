@@ -30,11 +30,6 @@ body {
   background-image: url("assets/day-background2.png");
   opacity: 0.9;
   box-shadow: 1px 1px 5px 1px #333339;
-
-}
-.App header {
-  display: block;
-  margin: 0 auto;
 }
 .Weather .DateTime p {
   font-size: 13px;
@@ -42,7 +37,7 @@ body {
   text-align: center;
   text-shadow: 2px 2px 4px #010707;
 }
-.Search .search-holder {
+.Weather .search-holder {
   width: 220px;
   height: 28px;
   border-radius: 5px 25px;
@@ -52,7 +47,7 @@ body {
   font-size: 13px;
   outline: none;
 }
-.Search .magnifying-glass {
+.Weather .magnifying-glass {
   border: none;
   background: none;
   outline: none;
@@ -60,11 +55,11 @@ body {
   text-shadow: 2px 2px 3px #333339;
   margin: 3px;
 }
-.App main {
+/* .App main {
   text-align: center;
   justify-content: center;
   justify-items: center;
-}
+} */
 .Weather .current-weather {
   padding: 30px;
 }
@@ -186,7 +181,6 @@ Footer {
   font-size: lighter;
   text-shadow: 1px 2px 4px #fef9d7;
   border-radius: 10px;
-  /* margin-top: 50px; */
   position: relative;
   top: 35px;
 }
@@ -200,9 +194,9 @@ Footer a {
   .Container{
     max-height: 600px; 
   }
-  .Search .search-holder {
-    width: 210px;
-    height: 20px;
+  .Weather .search-holder {
+    width: 200px;
+    height: 22px;
   }
   .Weather .DateTime p {
     font-size: 12px;
@@ -220,7 +214,7 @@ Footer a {
     top: -55px;
   }
   .Weather .celsius,
-.Weather .farenheit {
+  .Weather .farenheit {
   font-size: 17px;
 }
   .Weather .location {

@@ -1,5 +1,4 @@
 import React, {useState} from "react";
-// import City from "./City";
 import axios from "axios";
 import DateTime from "./DateTime";
 
@@ -24,6 +23,21 @@ export default function Weather() {
   if (weatherData.ready){
     return (
       <div className="Weather">
+        <div className="searchForm">
+          <div className="row">
+            <form className="col-6">
+              <input
+                type="text"
+                placeholder="Search city..."
+                className="search-holder"
+                autoComplete="off"
+              />
+            </form>
+            <button className="magnifying-glass col-3">
+              <i className="fas fa-search-location" />
+            </button>
+          </div>
+        </div> 
         <div className="DateTime">
           <DateTime date={weatherData.date} />
         </div>
@@ -50,9 +64,6 @@ export default function Weather() {
             <h2 className="location text-uppercase">{weatherData.city}</h2>
           </div> 
         </div> 
-        {/* <div>
-          <City location = "MUNICH"/>
-        </div> */}
         <div className="weather-description">
           <div className="row">
             <div className="col-3 max-min deg"><strong>{weatherData.tempMax}°/{weatherData.tempMin}°</strong></div>
@@ -77,6 +88,21 @@ export default function Weather() {
     
       return(
         <div className="Weather">
+          <div className="searchForm">
+            <div className="row">
+              <form className="col-6"> 
+                <input
+                  type="text"
+                  placeholder="Search city..."
+                  className="search-holder"
+                  autoComplete="off"
+                />
+              </form>
+              <button className="magnifying-glass col-3">
+                <i className="fas fa-search-location" />
+              </button>
+            </div>
+          </div> 
           <div className="DateTime">
             <p>Welcome!</p>
           </div>
@@ -103,9 +129,6 @@ export default function Weather() {
               <h2 className="location">loading...</h2>
             </div>
           </div>
-          {/* <div>
-            <City location = "MUNICH"/>
-          </div> */}
           <div className="weather-description">
             <div className="row">
               <div className="col max-min deg"><strong>20°/27°</strong></div>
