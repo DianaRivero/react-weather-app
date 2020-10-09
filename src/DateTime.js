@@ -2,17 +2,17 @@ import React from "react";
 
 export default function DateTime(props) {
  
-    let days = ["Sun","Mon","Wed","Thur","Fri","Sat"];
+    let days = ["Sun","Mon","Tues","Wed","Thur","Fri","Sat"];
     let months = ["Jan","Feb","March","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
-    let today = props.date.getDate();
-    let day = days[props.date.getDay()];
-    let month = months[props.date.getMonth()];
-    let year = props.date.getFullYear();
-    let hour = props.date.getHours();
+    let today = props.currentDate.getDate();
+    let day = days[props.currentDate.getDay()];
+    let month = months[props.currentDate.getMonth()];
+    let year = props.currentDate.getFullYear();
+    let hour = props.currentDate.getHours();
     if(hour < 10){
       hour = `0${hour}`
     };
-    let minutes = props.date.getMinutes();
+    let minutes = props.currentDate.getMinutes();
     if(minutes < 10){
       minutes = `0${minutes}`
     };
