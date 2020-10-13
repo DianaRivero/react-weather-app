@@ -17,7 +17,8 @@ export default function Weather(props) {
       feelsLike: Math.round(response.data.main.feels_like),
       humidity:response.data.main.humidity,
       wind:response.data.wind.speed,
-      city:response.data.name
+      city:response.data.name,
+      icon:response.data.weather[0].icon
     });
   }
   function search(){

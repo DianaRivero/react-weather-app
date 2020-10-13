@@ -64,7 +64,14 @@ body {
   padding: 30px;
 }
 .Weather .weather-icon {
-  width: 75px;
+  width:75px;
+  float: right;
+  position: relative;
+  left: 80px;
+  color: #fef9d7;
+  filter: drop-shadow(2px 2px 3px #333339);
+}
+.Weather canvas{
   float: right;
   position: relative;
   left: 80px;
@@ -208,6 +215,15 @@ Footer a {
     width: 65px;
     position: relative;
     top: -20px;
+  }
+  .Weather canvas{
+    width: 65px;
+    float: right;
+    position: relative;
+    left: 80px;
+    bottom: 20px;
+    color: #fef9d7;
+    filter: drop-shadow(2px 2px 3px #333339);
   }
   .Weather h1 {
     font-size: 100px;
