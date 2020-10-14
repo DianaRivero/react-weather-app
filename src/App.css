@@ -87,22 +87,23 @@ body {
   margin: 0 auto;
   color: #22272b;
 }
-.Weather .celsius,
-.Weather .farenheit {
+.Weather .btnCelsius,
+.Weather .btnFahrenheit {
   font-size: 20px;
   vertical-align: super;
   border:none;
   background-color: transparent;
-
+  outline: transparent;
 }
-.Weather .celsius {
+.Weather .btnBlack {
   color: black;
 }
-.Weather .fahrenheit {
+.Weather .btnBlue {
   color: #1284FF;
 }
 
-.Weather h1 span a {
+.Weather h1 span .btnCelsius,
+.Weather h1 span .btnFahrenheit {
   font-weight: bold;
   text-shadow: 2px 2px 4px #fef9d7;
   text-decoration: none;
@@ -110,10 +111,10 @@ body {
   padding: 0 2px;
   border-radius: 30%;
 }
-.Weather h1 span a:hover {
+/* .Weather button :hover {
   text-decoration: none;
   transition: all 200ms ease-in-out;
-}
+} */
 .Weather .location {
   margin: 0 auto;
   line-height : 20px;
@@ -229,8 +230,8 @@ Footer a {
     font-size: 100px;
     top: -55px;
   }
-  .Weather .celsius,
-  .Weather .farenheit {
+  .Weather .btnCelsius,
+  .Weather .btnFahrenheit {
   font-size: 17px;
 }
   .Weather .location {

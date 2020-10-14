@@ -91,10 +91,10 @@ export default function Weather(props) {
           <h1>
             <span className="temp-value">--</span>
             <span>
-              <button className="celsius"> 
+              <button className="btnCelsius"> 
                 °C|
               </button>
-              <button className="farenheit">
+              <button className="btnFahrenheit">
                 °F
               </button>
             </span>

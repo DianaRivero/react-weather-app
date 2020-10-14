@@ -1,6 +1,8 @@
 import React from "react";
 import DateTime from "./DateTime";
 import WeatherIcon from "./WeatherIcon";
+import WeatherTemperature from "./WeatherTemperature";
+
 export default function WeatherInfo(props){
     return (
         <div className="WeatherInfo">
@@ -12,16 +14,7 @@ export default function WeatherInfo(props){
                     <WeatherIcon code={props.data.icon}/>
                 </div>
                 <h1>
-                    <span className="temp-value">{props.data.temperature}</span>
-                    <span>
-                        <button className="celsius"> 
-                            °C|
-                        </button>
-                        <button className="farenheit">
-                            °F
-                        </button>
-                    </span>
-                </h1>
+                <WeatherTemperature celsius={props.data.temperature} tempMaxCel={props.data.tempMax} tempMinCel={props.data.tempMin}/>
                 <div className= "row">
                     <h2 className="location text-uppercase">{props.data.city}</h2>
                 </div> 
