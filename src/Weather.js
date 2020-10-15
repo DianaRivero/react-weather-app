@@ -3,9 +3,10 @@ import axios from "axios";
 import WeatherInfo from "./WeatherInfo";
 
 export default function Weather(props) {
-
   const [weatherData, setWeatherData]= useState({ready:false});
   const [city,setCity]=useState(props.defaultCity);
+  const [unit,setUnit] = useState("celsius");
+  
   function handleResponse(response){
     console.log(response.data);
     setWeatherData({
@@ -55,7 +56,7 @@ export default function Weather(props) {
             </button>
           </div>
         </div> 
-        <WeatherInfo data={weatherData}/>
+        <WeatherInfo data={weatherData} unit={unit} setUnit={setUnit}/>
       </div>
     );
   } else{  

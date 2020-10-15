@@ -2,6 +2,7 @@ import React from "react";
 import DateTime from "./DateTime";
 import WeatherIcon from "./WeatherIcon";
 import WeatherTemperature from "./WeatherTemperature";
+import WeatherDescription from "./WeatherDescription";
 
 export default function WeatherInfo(props){
     return (
@@ -13,25 +14,13 @@ export default function WeatherInfo(props){
                 <div className="row">
                     <WeatherIcon code={props.data.icon}/>
                 </div>
-                <h1>
-                <WeatherTemperature celsius={props.data.temperature} tempMaxCel={props.data.tempMax} tempMinCel={props.data.tempMin}/>
+                <WeatherTemperature celsius={props.data.temperature} unit={props.unit} setUnit={props.setUnit}/>
                 <div className= "row">
                     <h2 className="location text-uppercase">{props.data.city}</h2>
                 </div> 
             </div> 
             <div className="weather-description">
-                <div className="row">
-                    <div className="col-3 max-min deg"><strong>{props.data.tempMax}°/{props.data.tempMin}°</strong></div>
-                    <div className="col-2 feels-like deg"><strong>{props.data.feelsLike}°</strong></div>
-                    <div className="col-3 humidity deg"><strong>{props.data.humidity}%</strong></div>
-                    <div className="col-4 wind deg"><strong>{props.data.wind} km/h</strong></div>
-                </div>
-                <div className="row">
-                    <div className="col-3">Max-Min</div>
-                    <div className="col-2">Feels like</div>
-                    <div className="col-3">Humidity</div>
-                    <div className="col-4">Wind</div>
-                </div>
+                <WeatherDescription unit={props.unit} setUnit={props.setUnit} tempMax={props.data.tempMax} tempMin={props.data.tempMin} feelsLike={props.data.feelsLike} humidity={props.data.humidity} wind={props.data.wind}/>
             </div>
         </div>
     );
