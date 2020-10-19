@@ -19,7 +19,7 @@ export default function WeatherTemperature(props){
                     <span>{props.celsius}</span>
                     <span>
                         <button className="btnCelsius btnBlack"> 
-                            °C|
+                            °C   |
                         </button>
                         <button className="btnFahrenheit btnBlue" onClick={showFahrenheit}>
                             °F
@@ -35,7 +35,7 @@ export default function WeatherTemperature(props){
                     <span>{Math.round(fahrenheit())}</span>
                     <span>
                         <button className="btnCelsius btnBlue" onClick={showCelsius}> 
-                            °C|
+                            °C   |
                         </button>
                         <button className="btnFahrenheit btnBlack">
                             °F
