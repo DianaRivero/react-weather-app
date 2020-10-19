@@ -124,6 +124,44 @@ export default function Weather(props) {
             <div className="col">Wind</div>
           </div>
         </div>
+        <div className="temp-hours row">
+          <div className="col">
+            <div className="row">
+              <div className="col"></div>
+            </div> 
+            <div className="row">
+              <div className="col">
+                  <img
+                    src="img/unknown.png"
+                    className="icons-hourly-forecast"
+                    alt=" current weather icon"
+                  />
+              </div> 
+            </div>   
+            <div className="row">
+              <div className="col deg-hour"> <strong></strong></div>
+            </div>
+          </div>  
+        </div>
+        <div className="temp-week-days row">
+          <div className="col">
+            <div className="row">
+              <div className="col"></div>
+            </div> 
+            <div className="row">
+              <div className="col">
+              <img
+                  src="img/unknown.png"
+                  className="icons-daily-forecast"
+                  alt=" current weather icon"
+                />
+              </div> 
+            </div>   
+            <div className="row">
+              <div className="col deg-days"><strong></strong></div>
+            </div>  
+          </div>  
+        </div>
       </div>
     );
   }

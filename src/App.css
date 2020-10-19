@@ -63,14 +63,14 @@ body {
 .Weather .current-weather {
   padding: 30px;
 }
-/* .Weather .weather-icon {
+.Weather .weather-icon {
   width:75px;
   float: right;
   position: relative;
   left: 80px;
   color: #fef9d7;
   filter: drop-shadow(2px 2px 3px #333339);
-} */
+}
 .Weather .weather-icon canvas {
   float: right;
   position: relative;
@@ -121,6 +121,14 @@ body {
   color: #22272b;
 }
 .Weather .weather-description,
+.Weather .temp-hours,
+.Weather .temp-week-days {
+  text-align: center;
+  font-size: 14px;
+  color: #535556;
+  text-shadow: 1px 1px 2px #fef9d7;
+  margin-bottom: 20px;
+}
 .WeatherForecast .temp-hours,
 .WeatherForecast .temp-week-days {
   text-align: center;
@@ -141,6 +149,12 @@ body {
 .Weather .weather-description .deg{
   color: black;
   font-size: 13px;
+}
+.Weather .temp-hours {
+  background-color: rgba(227, 231, 234, 0.7);
+  border-radius: 10px;
+  box-shadow: 1px 1px 2px #7f8389;
+  padding: 5px 10px;
 }
 .WeatherForecast .temp-hours {
   background-color: rgba(227, 231, 234, 0.7);
@@ -178,6 +192,13 @@ body {
 .WeatherForecast .deg-days {
   font-size: 13px;
   color: black;
+}
+.Weather .temp-week-days {
+  background-color: rgba(227, 231, 234, 0.7);
+  border-radius: 10px;
+  box-shadow: 1px 1px 2px #7f8389;
+  padding: 5px 10px;
+  text-align: center;
 }
 .WeatherForecast .temp-week-days {
   background-color: rgba(227, 231, 234, 0.7);
