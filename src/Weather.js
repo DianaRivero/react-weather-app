@@ -25,6 +25,17 @@ export default function Weather(props) {
       longitude:response.data.coord.lon
     });
   }
+  function showCurrentPosition(position) {
+    let latitude = position.coords.latitude;
+    let longitude = position.coords.longitude;
+    const apiKey =`cbac4526bdb23912f197d795becdbdc7`;
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`
+    axios.get(apiUrl).then(handleResponse);
+  }
+  function searchLocation(event) {
+    event.preventDefault();
+    navigator.geolocation.getCurrentPosition(showCurrentPosition);
+  }
   function search(){
     const apiKey =`cbac4526bdb23912f197d795becdbdc7`;
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`
@@ -54,7 +65,7 @@ export default function Weather(props) {
                 onChange={handleCityChange}
               />
             </form>
-            <button className="magnifying-glass col-3">
+            <button className="magnifying-glass col-3" onClick={searchLocation}>
               <i className="fas fa-search-location" />
             </button>
           </div>
