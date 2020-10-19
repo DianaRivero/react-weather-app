@@ -19,14 +19,14 @@ export default function WeatherDescription(props){
             </div>    
         );
    } else{
-        let tempMaxFar= Math.round((props.tempMax*9)/ 5 + 32);
-        let tempMinFar= Math.round((props.tempMin*9)/ 5 + 32);
-        let feelsLikeFar= Math.round((props.tempMax*9)/ 5 + 32);
+        let tempMaxFahr= Math.round((props.tempMax*9)/ 5 + 32);
+        let tempMinFahr= Math.round((props.tempMin*9)/ 5 + 32);
+        let feelsLikeFahr= Math.round((props.tempMax*9)/ 5 + 32);
         return(
             <div className="WeatherDescription">
                 <div className="row">
-                        <div className="col-3 max-min deg"><strong>{tempMaxFar}°/{tempMinFar}°</strong></div>
-                        <div className="col-2 feels-like deg"><strong>{feelsLikeFar}°</strong></div>
+                        <div className="col-3 max-min deg"><strong>{tempMaxFahr}°/{tempMinFahr}°</strong></div>
+                        <div className="col-2 feels-like deg"><strong>{feelsLikeFahr}°</strong></div>
                         <div className="col-3 humidity deg"><strong>{props.humidity}%</strong></div>
                         <div className="col-4 wind deg"><strong>{props.wind} km/h</strong></div>
                 </div>

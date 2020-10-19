@@ -11,7 +11,7 @@ export default function WeatherInfo(props){
                 <DateTime currentDate={props.data.date} />
             </div>
             <div className="current-weather">
-                <div className="row">
+                <div className="row weather-icon">
                     <WeatherIcon code={props.data.icon}/>
                 </div>
                 <WeatherTemperature celsius={props.data.temperature} unit={props.unit} setUnit={props.setUnit}/>

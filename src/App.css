@@ -63,15 +63,15 @@ body {
 .Weather .current-weather {
   padding: 30px;
 }
-.Weather .weather-icon {
+/* .Weather .weather-icon {
   width:75px;
   float: right;
   position: relative;
   left: 80px;
   color: #fef9d7;
   filter: drop-shadow(2px 2px 3px #333339);
-}
-.Weather canvas{
+} */
+.Weather .weather-icon canvas {
   float: right;
   position: relative;
   left: 80px;
@@ -121,8 +121,8 @@ body {
   color: #22272b;
 }
 .Weather .weather-description,
-.Forecast .temp-hours,
-.Forecast .temp-week-days {
+.WeatherForecast .temp-hours,
+.WeatherForecast .temp-week-days {
   text-align: center;
   font-size: 14px;
   color: #535556;
@@ -142,13 +142,13 @@ body {
   color: black;
   font-size: 13px;
 }
-.Forecast .temp-hours {
+.WeatherForecast .temp-hours {
   background-color: rgba(227, 231, 234, 0.7);
   border-radius: 10px;
   box-shadow: 1px 1px 2px #7f8389;
   padding: 5px 10px;
 }
-.Forecast .temp-hours .col{
+.WeatherForecast .temp-hours .col{
   line-height: 18px;
 }
 .Weather .unknown-icon {
@@ -158,6 +158,14 @@ body {
   opacity: 1;
   filter: drop-shadow(2px 2px 3px #333339);
 }
+.WeatherForecast canvas{
+  width: 25px;
+  text-align: center;
+  color: #ffffff;
+  opacity: 1;
+  filter: drop-shadow(1px 1px 2px #000000);
+}
+
 .icons-hourly-forecast,
 .icons-daily-forecast {
   width: 35px;
@@ -166,19 +174,19 @@ body {
   opacity: 1;
   filter: drop-shadow(1px 1px 2px #000000);
 }
-.Hourly .deg-hour,
-.Daily .deg-days {
+.WeatherForecast .deg-hour,
+.WeatherForecast .deg-days {
   font-size: 13px;
   color: black;
 }
-.Forecast .temp-week-days {
+.WeatherForecast .temp-week-days {
   background-color: rgba(227, 231, 234, 0.7);
   border-radius: 10px;
   box-shadow: 1px 1px 2px #7f8389;
   padding: 5px 10px;
   text-align: center;
 }
-.Forecast .temp-week-days .col{
+.WeatherForecast .temp-week-days .col{
   line-height: 18px;
 }
 
@@ -217,12 +225,12 @@ Footer a {
     position: relative;
     top: -20px;
   }
-  .Weather canvas{
-    width: 65px;
+  .Weather .weather-icon canvas{
+    width: 55px;
     float: right;
     position: relative;
-    left: 80px;
-    bottom: 20px;
+    left: 165px;
+    bottom: 5px;
     color: #fef9d7;
     filter: drop-shadow(2px 2px 3px #333339);
   }
@@ -239,7 +247,7 @@ Footer a {
     position: relative;
     top: -25px;
   }
-  .Weather .weather-description, .Forecast .temp-hours,.Forecast .temp-week-days  {
+  .Weather .weather-description, .WeatherForecast .temp-hours,.WeatherForecast .temp-week-days  {
     font-size: 12px;
     padding: 3px 5px;
     position: relative;
@@ -249,14 +257,13 @@ Footer a {
   .Weather .weather-description .deg{
     font-size: 11px;
   }
-  .Forecast .temp-hours .col{
+  .WeatherForecast .temp-hours .col{
     line-height: 12px;
   }
-  .icons-hourly-forecast,
-  .icons-daily-forecast {
-    width: 25px;
+  .WeatherForecast canvas{
+    width: 20px;
   }
-  .Forecast .temp-week-days .col{
+  .WeatherForecast .temp-week-days .col{
     line-height: 12px;
   }
   .Hourly .deg-hour,
