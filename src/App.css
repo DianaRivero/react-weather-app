@@ -63,7 +63,7 @@ body {
 .Weather .current-weather {
   padding: 30px;
 }
-.Weather .weather-icon {
+.Weather .main-icon {
   width:75px;
   float: right;
   position: relative;

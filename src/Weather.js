@@ -26,7 +26,7 @@ export default function Weather(props) {
     });
   }
   function search(){
-    const apiKey =`4bf6877c9fd424fd93f8acf13ea89864`;
+    const apiKey =`cbac4526bdb23912f197d795becdbdc7`;
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`
     axios.get(apiUrl).then(handleResponse);
   }
@@ -91,7 +91,7 @@ export default function Weather(props) {
           <div className="row">
             <img
               src="img/unknown.png"
-              className="weather-icon"
+              className="main-icon"
               alt=" current weather icon"
             />
           </div>

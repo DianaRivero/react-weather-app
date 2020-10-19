@@ -19,19 +19,19 @@ export default function WeatherForecast(props){
                 <div className ="temp-hours row">
                     {forecast.hourly.slice(1,5).map(function(HourlyForecastItem){
                         return(
-                            <HourlyForecast data={HourlyForecastItem}/> );   
+                            <HourlyForecast data={HourlyForecastItem} unit={props.unit} setUnit={props.setUnit}/> );   
                     })} 
                 </div>
                 <div className ="temp-week-days row">
                     {forecast.daily.slice(1,5).map(function(DailyForecastItem){
                         return(
-                            <DailyForecast dataDay={DailyForecastItem}/> );   
+                            <DailyForecast dataDay={DailyForecastItem} unit={props.unit} setUnit={props.setUnit}/> );   
                     })} 
                 </div>
             </div>
      );
     }else{
-        const apiKey =`4bf6877c9fd424fd93f8acf13ea89864`;
+        const apiKey =`cbac4526bdb23912f197d795becdbdc7`;
         let url = `https://api.openweathermap.org/data/2.5/onecall?lat=${props.latitude}&lon=${props.longitude}&exclude=current,minutely&appid=${apiKey}&units=metric`
         axios.get(url).then(handleForecastResponse);
         return(
@@ -39,25 +39,3 @@ export default function WeatherForecast(props){
 
         }
 } 
-                        
-            
-                        
-
-/*  export default function WeatherForecast(){
-     return (
-         <div className = "WeatherForecast">
-             <div className ="temp-hours row">
-             <Hourly/>
-             <Hourly/>
-             <Hourly/>
-             <Hourly/>
-            </div>
-            <div className ="temp-week-days row">
-             <Daily/>
-             <Daily/>
-             <Daily/>
-             <Daily/>
-            </div>
-         </div>
-     );
- } */
