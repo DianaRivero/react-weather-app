@@ -12,12 +12,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: linear-gradient(
-    -225deg,
-    #5d9fff 0%,
-    #b8dcff 48%,
-    #6bbbff 100%
-  );
+  background-color: black;
 }
 .Container {
   
@@ -27,7 +22,7 @@ body {
   max-height:725px;
   padding: 30px;
   border-radius: 25px;
-  background-image: url("assets/day-background2.png");
+ background-image: url("assets/background3.png");
   opacity: 0.9;
   box-shadow: 1px 1px 5px 1px #333339;
 }
@@ -55,11 +50,6 @@ body {
   text-shadow: 2px 2px 3px #333339;
   margin: 3px;
 }
-/* .App main {
-  text-align: center;
-  justify-content: center;
-  justify-items: center;
-} */
 .Weather .current-weather {
   padding: 30px;
 }
@@ -111,10 +101,6 @@ body {
   padding: 0 2px;
   border-radius: 30%;
 }
-/* .Weather button :hover {
-  text-decoration: none;
-  transition: all 200ms ease-in-out;
-} */
 .Weather .location {
   margin: 0 auto;
   line-height : 20px;
@@ -213,16 +199,13 @@ body {
 
 Footer {
   font-size: 13px;
-  color: #010707;
-  background-color: rgba(176, 178, 178, 0.4);
+  color: #ffffff;
   font-size: lighter;
-  text-shadow: 1px 2px 4px #fef9d7;
-  border-radius: 10px;
   position: relative;
   top: 35px;
 }
 Footer a {
-  color: #3337FF;
+  color:#92CACB;
   font-weight: bold;
   text-decoration: none;
 
